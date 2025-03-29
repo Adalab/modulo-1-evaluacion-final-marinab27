@@ -14,6 +14,13 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+    padding-top: 20px;
+}
+.menu-burger{
+    position: relative;
+    right: 20%;
+    bottom: 40%;
+
 }
 .logo-cabecera{
     max-height: 96px;
@@ -41,4 +48,10 @@
     padding-bottom: 12px;
     background-color: #0c474b;
     color: white;
+    font-weight: 600;
+}
+
+main{
+    background-color: #f0ebe5;
+    text-align: center;
 }
