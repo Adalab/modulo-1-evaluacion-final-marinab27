@@ -10,7 +10,9 @@
 .cabecera {
     background-image: url("recursos/header.jpg");
     background-size: cover;
-    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: auto;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -49,8 +51,18 @@
     background-color: #0c474b;
     color: white;
     font-weight: 600;
+    margin-bottom: 60%;
 }
-
+.boton-cabecera2{
+    text-decoration: none;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: #0c474b;
+    color: white;
+    font-weight: 600;
+}
 main{
     background-color: #f0ebe5;
     text-align: center;
@@ -175,3 +187,96 @@ main{
 .pie div {
     max-width: 50%;
 }
+
+
+
+
+  /*tablet*/
+
+  @media all and (min-width:768px) {
+
+    .menu-burger{
+        right: 90%;
+    }
+    .hero{
+        display: flex;
+        align-items: flex-start;
+    }
+    .titulo{
+        text-align: left;
+        max-width: 80%;
+        font-size: 36px;
+        padding-bottom: 5%;
+        padding-top:120px;
+    
+    }
+
+    .wrapper {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto 1fr; 
+        grid-template-areas:
+            "titulo titulo titulo"
+            "art1 art2 art3";
+        gap: 60px;
+        padding-left: 10%;
+        padding-right: 10%;;
+    }
+    
+    .titulo-2 {
+        grid-area: titulo;
+        text-align: center;
+    }
+    
+    .article1 {
+        grid-area: art1;
+    }
+    .article1 img {
+        max-width: 50%;
+        padding-bottom: 20%;
+
+    }
+    .article2 {
+        grid-area: art2;
+    }
+    .article2 img {
+        max-width: 50%;
+        padding-bottom: 20%;
+
+    }
+    
+    .article3 {
+        grid-area: art3;
+    }
+    .article3 img {
+        max-width: 50%;
+        padding-bottom: 20%;
+
+    }
+
+    .espacios{
+        padding:10%;
+    
+    }
+    .imagen-rollos{
+        max-height: 474px;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        
+    }
+    .imagen-rollos img {
+        width: 100%; 
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .pie{
+        display: flex;
+        flex-direction: row;
+        padding-left: 0;
+        padding-top: 5%;
+        padding-bottom: 5%;
+
+    }
+
+    }
