@@ -8,13 +8,16 @@
 
 }
 
+html {
+    scroll-behavior: smooth;
+}
 
 .cabecera {
     background-image: url("../../public/images/header.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    width: 100%;;
+    width: 100%;
     height: auto;
     display: flex;
     align-items: center;
@@ -228,6 +231,12 @@ nav a {
     padding: 10px 5%;
     align-items: center;
     padding-top: 20px;
+}
+
+.flecha-arriba{
+    position: absolute;
+    align-self: flex-end;
+    right: 20px;
 }
 
     @media all and (max-width:900px) {
